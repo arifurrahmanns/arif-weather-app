@@ -10,7 +10,7 @@ searchbtn.addEventListener('submit', (e) => {
 
 
 
-    fetch('http://localhost:3000/weather?address=' + inputValueo).then((response) => {
+    fetch('/weather?address=' + inputValueo).then((response) => {
         response.json().then((data) => {
             if (data.error) {
                 return dataDiv.innerHTML = '<div class = "searchResult"><h2>' + data.error + '</h2></div>'
