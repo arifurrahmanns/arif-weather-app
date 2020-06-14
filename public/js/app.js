@@ -17,7 +17,7 @@ searchbtn.addEventListener('submit', (e) => {
 
             }
 
-            dataDiv.innerHTML = '<div class = "searchResult"><h3>Search result of <span>' + data.address + '.</span></h3><div class="dataInner"><h1>' + data.location + '.</h1><h2>' + data.forecast + '</h2></div></div>'
+            dataDiv.innerHTML = '<div class = "searchResult"><h3>Search result of <span>' + data.address + '.</span></h3><div class="dataInner"><h1>' + data.location + '.</h1><div class="Wicon">' + data.forecast + '</div></div></div>'
 
 
 
